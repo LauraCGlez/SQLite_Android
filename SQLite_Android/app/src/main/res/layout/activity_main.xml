@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="buscarContacto"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/movil"
+        android:layout_width="317dp"
+        android:layout_height="69dp"
+        android:drawableStart="@drawable/ic_phone"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/movil"
+        android:inputType="number|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.425"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <EditText
+        android:id="@+id/nombre"
+        android:layout_width="320dp"
+        android:layout_height="67dp"
+        android:drawableStart="@drawable/ic_text"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/nombre"
+        android:inputType="text|textPersonName|textAutoComplete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="314dp"
+        android:layout_height="67dp"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="@string/mail"
+        android:inputType="text|textEmailAddress|textAutoComplete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.762" />
+
+    <Button
+        android:id="@+id/btnGuardar"
+        android:layout_width="135dp"
+        android:layout_height="51dp"
+        android:backgroundTint="@color/btnGuardar"
+        android:drawableLeft="@drawable/ic_create"
+        android:onClick="guardarContacto"
+        android:text="@string/btnGuardar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.882" />
+
+    <Button
+        android:id="@+id/btnEliminar"
+        android:layout_width="112dp"
+        android:layout_height="55dp"
+        android:backgroundTint="@color/btnLimpiar"
+        android:drawableLeft="@drawable/ic_delete"
+        android:onClick="limpiarDatos"
+        android:text="@string/btnEliminar"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.982" />
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="169dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="@string/titulo"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.155" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="76dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026"
+        app:srcCompat="@drawable/ic_contact" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/buscarContacto"
+        android:layout_width="252dp"
+        android:layout_height="65dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:drawablePadding="5dp"
+        android:hint="@string/buscador"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.288" />
+
+    <Button
+        android:id="@+id/btnBuscar"
+        android:layout_width="99dp"
+        android:layout_height="61dp"
+        android:backgroundTint="@color/btnBuscar"
+        android:onClick="buscarContacto"
+        android:text="@string/btnBuscar"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.404" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

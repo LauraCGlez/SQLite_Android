@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MySQL_Lite</string>
+    <string name="titulo">Contactos</string>
+    <string name="nombre">Nombre</string>
+    <string name="movil">Movil</string>
+    <string name="mail">Email</string>
+    <string name="btnGuardar">Guardar</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="btnEliminar">Clear</string>
+    <string name="buscador">Buscar contacto aqui . . .</string>
+
+</resources>
